@@ -2,7 +2,9 @@
 #include <string>
 using namespace std;
 
-string itc_hello_str(string name) { return "Hello, " + name; }
+string itc_hello_str(string name) {
+  return "Hello, " + name;
+}
 
 long long itc_len(string str) {
   long long counter = 0;
@@ -18,8 +20,7 @@ void itc_print_copy_str(string str, int number) {
 void itc_first_end_three(string str) {
   long long str_length = itc_len(str);
   if (str_length > 5) {
-    cout << str[0] << str[1] << str[2] << str[str_length - 3]
-         << str[str_length - 2] << str[str_length - 1];
+    cout << str[0] << str[1] << str[2] << str[str_length - 3] << str[str_length - 2] << str[str_length - 1];
   } else {
     while (str_length > 0) {
       cout << str[0];
