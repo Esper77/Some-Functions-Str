@@ -6,10 +6,11 @@ using namespace std;
 
 string itc_cmp_str(string str1, string str2, int num) {
   string str, str_out;
-  long long len1 = itc_len(str1), len2 = itc_len(str2);
+  long long len1 = itc_len(str1);
+  long long len2 = itc_len(str2);
   if ((len1 < num) || (num < 0))
       return str1;
-  for (int i = 0; i < num; i++) 
+  for (int i = 0; i < num; i++)
       str += str1[i];
   for (int i = 0; i < len2; i++)
       str += str2[i];
@@ -61,7 +62,8 @@ int itc_max_char_on_end(string str) {
       if (b > a) a = b;
       b = 0;
     }
-    c++;
+    i++;
   }
   if (b > a) a = b;
   return a;
+}
