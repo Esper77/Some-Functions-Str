@@ -1,8 +1,4 @@
 #include "middle_str.h"
-#include <iostream>
-#include <string>
-
-
 
 bool itc_isDigit(unsigned char c)
 {
